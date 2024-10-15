@@ -20,7 +20,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors({
-  origin: process.env.frontend_url,
+  origin: "http://localhost:5173",
   methods: ['GET', 'POST'],
   credentials: true,
 }));
